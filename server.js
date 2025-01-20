@@ -15,6 +15,10 @@ app.get('/',(req,res)=>{
     res.render("pages/home",{title:".: POMOTODO :."});
 })
 
+app.get('/about',(req,res)=>{
+    res.render("pages/about",{title:".: About :."});
+})
+
 const port = 5000;
 
 app.listen(port,()=>{
